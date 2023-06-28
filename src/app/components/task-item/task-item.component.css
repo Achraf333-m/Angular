@@ -1,0 +1,23 @@
+.task {
+    background-color: rgba(154, 154, 154, 0.389);
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.task.reminder {
+    border-left: 5px solid rgb(13, 206, 13);
+}
+
+.task h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    color: red;
+    font-size: 20px;
+    padding: 4px;
+}

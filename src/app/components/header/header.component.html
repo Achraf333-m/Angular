@@ -1,0 +1,11 @@
+<header>
+  <div>
+    <h1>{{ title }}</h1>
+    <p *ngIf="hasRoute('/')">Double tap to set a reminder!</p>
+  </div>
+  <app-button *ngIf="hasRoute('/')"
+    color="{{showAddTask ? 'red' :'green'}}"
+    text="{{showAddTask ? 'Close' :'Add Task'}}"
+    (btnClick)="toggleTask()"
+  ></app-button>
+</header>
